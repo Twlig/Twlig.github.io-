@@ -314,32 +314,25 @@
 <p><img src="https://github.com/Twlig/photo/blob/master/photo/QQ%E6%88%AA%E5%9B%BE20171211225643.png?raw=true" alt=""></p>
 <h3 id="3、hexo创建博客文档"><a href="#3、hexo创建博客文档" class="headerlink" title="3、hexo创建博客文档"></a>3、hexo创建博客文档</h3><p>其中username是你在创建远程git仓库时，你对博客仓库的命名。这样做是为了保持本地仓库和远程仓库的命名统一，其实不一样也可以。<br>下面这个命令也是在运行窗口的cmd，打开控制台里面敲。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init username.github.io</span><br></pre></td></tr></table></figure>
-<h3 id="4、更改配置"><a href="#4、更改配置" class="headerlink" title="4、更改配置"></a>4、更改配置</h3><p>####1、安装主题</p>
-<p>这个更改配置其实是为了改变页面的布局，在之前hexo init的时候其实已经下载了默认的主体，但是next，样式更为美观。</p>
+<h3 id="4、更改配置"><a href="#4、更改配置" class="headerlink" title="4、更改配置"></a>4、更改配置</h3><h4 id="1、安装主题"><a href="#1、安装主题" class="headerlink" title="1、安装主题"></a>1、安装主题</h4><p>这个更改配置其实是为了改变页面的布局，在之前hexo init的时候其实已经下载了默认的主体，但是next，样式更为美观。</p>
 <p><img src="https://github.com/Twlig/photo/blob/master/photo/QQ%E6%88%AA%E5%9B%BE20171211230927.png?raw=true" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd filename.github.io</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>####2、更改配置</p>
-<p>打开文件位置username.github.io/_config.yml修改几个键值对，下面把几个必须设置的列出来按需求修改， 还有注意配置的键值之间一定要有空格。.ym;后缀的文件可以markdown，还有代码编译器也行，甚至word都可以。</p>
+<h4 id="2、更改配置"><a href="#2、更改配置" class="headerlink" title="2、更改配置"></a>2、更改配置</h4><p>打开文件位置username.github.io/_config.yml修改几个键值对，下面把几个必须设置的列出来按需求修改， 还有注意配置的键值之间一定要有空格。.ym;后缀的文件可以markdown，还有代码编译器也行，甚至word都可以。</p>
 <p>title: //你博客的名字<br>author:  //你的名字<br>language: zh-Hans //语言 中文<br>theme: next //刚刚安装的主题名称<br>deploy:<br>type: git //使用Git 发布<br>repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="noopener">https://github.com/username/username.github.io.git</a> // 刚创建的Github仓库</p>
-<p>###5、写文章</p>
-<p>所有基础框架都已经创建完成，接下来可以开始写博客。在filename.github.io/source/_posts下创建你的第一个博客，例如，创建一个名为firstTry.md的文件，用Markdown编译器编写。语法什么的我在前面的内容有讲到。还有在Markdown里插入图片很麻烦，我在这里提供了一种方法就是上传到git仓库。然后右键保存图片地址在用就可以了。</p>
+<h3 id="5、写文章"><a href="#5、写文章" class="headerlink" title="5、写文章"></a>5、写文章</h3><p>所有基础框架都已经创建完成，接下来可以开始写博客。在filename.github.io/source/_posts下创建你的第一个博客，例如，创建一个名为firstTry.md的文件，用Markdown编译器编写。语法什么的我在前面的内容有讲到。还有在Markdown里插入图片很麻烦，我在这里提供了一种方法就是上传到git仓库。然后右键保存图片地址在用就可以了。</p>
 <p><img src="https://github.com/Twlig/photo/blob/master/photo/QQ%E6%88%AA%E5%9B%BE20171211221834.png?raw=true" alt=""></p>
 <p>这是我在我的markdown中的写法：</p>
 <p><img src="https://github.com/Twlig/photo/blob/master/photo/QQ%E6%88%AA%E5%9B%BE20171212233644.png?raw=true" alt=""></p>
-<p>###6、测试</p>
-<p>测试服务启动，你可以在浏览器中输入<a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a> 访问了。<br>Windows键加R打开运行窗口，在控制台输入以下代码。注意文件地址是你的username<br>所以如果你的控制台打开以后左边的地址不是你的username文件，最好执行一下cd username（地址）操作</p>
+<h3 id="6、测试"><a href="#6、测试" class="headerlink" title="6、测试"></a>6、测试</h3><p>测试服务启动，你可以在浏览器中输入<a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a> 访问了。<br>Windows键加R打开运行窗口，在控制台输入以下代码。注意文件地址是你的username<br>所以如果你的控制台打开以后左边的地址不是你的username文件，最好执行一下cd username（地址）操作</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p><img src="https://github.com/Twlig/photo/blob/master/photo/QQ%E6%88%AA%E5%9B%BE20171211232622.png?raw=true" alt=""></p>
-<p>###7、安装hexo-deployer-git自动部署发布工具</p>
-<p>Windows键加R打开运行窗口，在控制台输入以下代码。注意文件地址最好是你的username<br>所以如果你的控制台打开以后左边的地址不是你的username文件，最好执行一下cd username（地址）操作</p>
+<h3 id="7、安装hexo-deployer-git自动部署发布工具"><a href="#7、安装hexo-deployer-git自动部署发布工具" class="headerlink" title="7、安装hexo-deployer-git自动部署发布工具"></a>7、安装hexo-deployer-git自动部署发布工具</h3><p>Windows键加R打开运行窗口，在控制台输入以下代码。注意文件地址最好是你的username<br>所以如果你的控制台打开以后左边的地址不是你的username文件，最好执行一下cd username（地址）操作</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p><img src="https://github.com/Twlig/photo/blob/master/photo/QQ%E6%88%AA%E5%9B%BE20171213000548.png?raw=true" alt=""></p>
-<p>###8、发布</p>
-<p>测试没问题后，我们就生成静态网页文件发布至我们的Github pages 中。</p>
+<h3 id="8、发布"><a href="#8、发布" class="headerlink" title="8、发布"></a>8、发布</h3><p>测试没问题后，我们就生成静态网页文件发布至我们的Github pages 中。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p>如果这是你的第一次，终端会让你输入Github 的邮箱和密码，正确输入后，就会把你的博客上传至Github 了。以后在每次把博客写完后，执行一下这个命令就可以直接发布了</p>
-<p>###9、访问你的博客</p>
-<p>在浏览器里搜索<a href="https://username.github.io/" target="_blank" rel="noopener">https://username.github.io/</a><br>就可以了</p>
+<h3 id="9、访问你的博客"><a href="#9、访问你的博客" class="headerlink" title="9、访问你的博客"></a>9、访问你的博客</h3><p>在浏览器里搜索<a href="https://username.github.io/" target="_blank" rel="noopener">https://username.github.io/</a><br>就可以了</p>
 
           
         
